@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://omegalinks.in/')
-    START_TXT = environ.get("START_TXT", '''<b>ᴋᴏɴɪᴄʜɪᴡᴀ​ {}-ꜱᴀɴ​ 👋🏻 
-                            ​ɪ'ᴍ ɴɪᴄᴏ ʀᴏʙɪɴ ᴀ ꜰɪʟᴇ ꜱʜᴀʀɪɴɢ ʙᴏᴛ
-                            <a href=https://t.me/Uncensored_Hanimes><b>ᴜɴᴄᴇɴꜱᴏʀᴇᴅ ʜᴀɴɪᴍᴇꜱ</b> 😁.</b>''')
+    START_TXT = environ.get("START_TXT", '''<b>ᴋᴏɴɪᴄʜɪᴡᴀ​ {}-ꜱᴀɴ​ 👋🏻
+ɪ'ᴍ ɴɪᴄᴏ ʀᴏʙɪɴ ᴀ ꜰɪʟᴇ ꜱʜᴀʀɪɴɢ ʙᴏᴛ
+<a href=https://t.me/Uncensored_Hanimes><b>ᴜɴᴄᴇɴꜱᴏʀᴇᴅ ʜᴀɴɪᴍᴇꜱ</b> 😁.</b>''')
     HELP_TXT = """ʜᴇʏᴀ {}
 ʏᴏᴜ ᴡᴀɴᴛ ʜᴇʟᴘ ʜᴇʀᴇ ɪᴛ ɪꜱ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ."""
     ABOUT_TXT = """<b><i>​ᴍʏ ɴᴀᴍᴇ​: <a href=https://t.me/NicoRobinRobot><b>ɴɪᴄᴏ ʀᴏʙɪɴ​</b></a>\n
