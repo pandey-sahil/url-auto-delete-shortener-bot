@@ -185,13 +185,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('​🇵​​🇱​​🇪​​🇦​​🇸​​🇪​ ​🇸​​🇭​​🇦​​🇷​​🇪​ ​🇦​​🇳​​🇩​ ​🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​')
+                    return await query.answer('​ᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('​🇵​​🇱​​🇪​​🇦​​🇸​​🇪​ ​🇸​​🇭​​🇦​​🇷​​🇪​ ​🇦​​🇳​​🇩​ ​🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​')
+                return await query.answer('​ᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
@@ -273,7 +273,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('​🇵​​🇱​​🇪​​🇦​​🇸​​🇪​ ​🇸​​🇭​​🇦​​🇷​​🇪​ ​🇦​​🇳​​🇩​ ​🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​')
+        return await query.answer('​ᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -296,7 +296,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('​🇵​​🇱​​🇪​​🇦​​🇸​​🇪​ ​🇸​​🇭​​🇦​​🇷​​🇪​ ​🇦​​🇳​​🇩​ ​🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​')
+        return await query.answer('​ᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -314,7 +314,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('​🇵​​🇱​​🇪​​🇦​​🇸​​🇪​ ​🇸​​🇭​​🇦​​🇷​​🇪​ ​🇦​​🇳​​🇩​ ​🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​')
+        return await query.answer('​ᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ')
     elif query.data == "backcb":
         await query.answer()
 
@@ -325,7 +325,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('​🇵​​🇱​​🇪​​🇦​​🇸​​🇪​ ​🇸​​🇭​​🇦​​🇷​​🇪​ ​🇦​​🇳​​🇩​ ​🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​')
+            return await query.answer('​ᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ')
         buttons = []
         for groupid in groupids:
             try:
@@ -432,11 +432,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🇨​​🇭​​🇦​​🇳​​🇳​​🇪​​🇱', url='https://t.me/Uncensored_Hanimes'),
-            InlineKeyboardButton('🇬​​🇷​​🇴​​🇺​​🇵​ ​🇨​​🇭​​🇦​​🇹', url='https://t.me/+NVf3rFQzE2swYTM9')
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/Uncensored_Hanimes'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/+NVf3rFQzE2swYTM9')
             ],[
-            InlineKeyboardButton('​🇭​​🇪​​🇱​​🇵', callback_data='help'),
-            InlineKeyboardButton('​🇦​​🇧​​🇴​​🇺​​🇹​', callback_data='about')
+            InlineKeyboardButton('​ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('​ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -444,16 +444,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('​🇵​​🇱​​🇪​​🇦​​🇸​​🇪​ ​🇸​​🇭​​🇦​​🇷​​🇪​ ​🇦​​🇳​​🇩​ ​🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​')
+        await query.answer('​ᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('​🇲​​🇦​​🇳​​🇺​​🇦​​🇱​ ​🇫​​🇮​​🇱​​🇹​​🇪​​🇷​', callback_data='manuelfilter'),
-            InlineKeyboardButton('​🇦​​🇺​​🇹​​🇴​ ​🇫​​🇮​​🇱​​🇹​​🇪​​🇷​', callback_data='autofilter')
+            InlineKeyboardButton('​ᴍᴀɴᴜᴀʟ ғɪʟᴛʀʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('​ᴀᴜᴛᴏ ғɪʟᴛᴇʀ', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('​🇨​​🇴​​🇳​​🇳​​🇪​​🇨​​🇹​​🇮​​🇴​​🇳​​🇸​', callback_data='coct'),
-            InlineKeyboardButton('​🇪​​🇽​​🇹​​🇷​​🇦​', callback_data='extra')
+            InlineKeyboardButton('​ᴄᴏɴɴᴇᴄᴛɪᴏɴs', callback_data='coct'),
+            InlineKeyboardButton('​ᴇxᴛʀᴀs', callback_data='extra')
         ], [
-            InlineKeyboardButton('​🇭​​🇴​​🇲​​🇪​', callback_data='start'),
+            InlineKeyboardButton('​ʜᴏᴍᴇ', callback_data='start'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -463,7 +463,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('​🇭​​🇴​​🇲​​🇪​', callback_data='start'),
+            InlineKeyboardButton('​ʜᴏᴍᴇ', callback_data='start'),
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -484,7 +484,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('​🇧​​🇺​​🇹​​🇹​​🇴​​🇳​​🇸​', callback_data='button')
+            InlineKeyboardButton('​ʙᴜᴛᴛᴏɴs', callback_data='button')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -525,7 +525,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('👮‍♂️ ​🇦​​🇩​​🇲​​🇮​​🇳​', callback_data='admin')
+            InlineKeyboardButton('👮‍♂️ ​ᴀᴅᴍɪɴ', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -546,7 +546,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('​🇷​​🇪​​🇫​​🇷​​🇪​​🇸​​🇭​', callback_data='rfrsh')
+            InlineKeyboardButton('​ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -565,7 +565,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('👩‍🦯 ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('​🇷​​🇪​​🇫​​🇷​​🇪​​🇸​​🇭​', callback_data='rfrsh')
+            InlineKeyboardButton('​ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -586,7 +586,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('​🇵​​🇱​​🇪​​🇦​​🇸​​🇪​ ​🇸​​🇭​​🇦​​🇷​​🇪​ ​🇦​​🇳​​🇩​ ​🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​')
+            return await query.answer('​ᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -598,9 +598,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if settings is not None:
             buttons = [
                 [
-                    InlineKeyboardButton('​🇫​​🇮​​🇱​​🇹​​🇪​​🇷​ ​🇧​​🇺​​🇹​​🇹​​🇴​​🇳​',
+                    InlineKeyboardButton('​ғɪʟᴛᴇʀ ʙᴜᴛᴛᴏɴ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('​🇸​​🇮​​🇳​​🇬​​🇱​​🇪​' if settings["button"] else '​🇩​​🇴​​🇺​​🇧​​🇱​​🇪​',
+                    InlineKeyboardButton('​sɪɴɢʟᴇ' if settings["button"] else '​ᴅᴏᴜʙʟᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
@@ -633,7 +633,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('​🇵​​🇱​​🇪​​🇦​​🇸​​🇪​ ​🇸​​🇭​​🇦​​🇷​​🇪​ ​🇦​​🇳​​🇩​ ​🇸​​🇺​​🇵​​🇵​​🇴​​🇷​​🇹​')
+    await query.answer('​ᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ')
 
 
 async def auto_filter(client, msg, spoll=False):
